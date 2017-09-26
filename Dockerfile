@@ -17,9 +17,11 @@ RUN apk add --update --no-cache \
   libjpeg-turbo \
   libjpeg-turbo-dev \
   libjpeg-turbo-utils \
+
+RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted \
+  gifsicle \
   optipng
 
-RUN apk add gifsicle --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted
 
 RUN npm i -g grunt-cli bower svgo && \
   grunt -V && \
