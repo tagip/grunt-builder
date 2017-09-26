@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:4-alpine
 
 RUN apk add --update --no-cache openssh-client
 
