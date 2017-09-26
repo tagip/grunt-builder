@@ -16,7 +16,7 @@ RUN apk add --update --no-cache \
   libwebp-dev \
   libjpeg-turbo \
   libjpeg-turbo-dev \
-  libjpeg-turbo-utils \
+  libjpeg-turbo-utils
 
 RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted \
   gifsicle \
