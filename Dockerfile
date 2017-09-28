@@ -20,7 +20,8 @@ RUN apk add --update --no-cache \
 
 RUN apk add --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community/ --allow-untrusted \
   gifsicle \
-  optipng
+  optipng \
+  pngquant
 
 
 RUN npm i -g grunt-cli bower svgo && \
